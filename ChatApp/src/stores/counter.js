@@ -2,11 +2,15 @@ import { ref, computed } from 'vue'
 import { defineStore } from 'pinia'
 
 export const useCounterStore = defineStore('counter', () => {
-  const count = ref(0)
-  const doubleCount = computed(() => count.value * 2)
-  function increment() {
-    count.value++
+  const chatHistory = ref([{order: 1, from: "me", chatMsg: "Hi there are you awake ?"},{order: 2, from: "other", chatMsg: "Hi, yes awake"}])
+  
+  const setChatistory = (chatHist) => {
+    chatHistory.value = chatHist;
   }
 
-  return { count, doubleCount, increment }
+  const addChatToHistory = (chatMsg) => {
+
+  }
+
+  return { chatHistory, setChatistory, addChatToHistory }
 })

@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #a8abb2;
+    color: whitesmoke;
+    font-size: 18px;
+}
+
+#app {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.ma-12 {
+    margin: 12px;
+}
+
+.landingPage .el-input {
+    margin-bottom: 12px;
+}
+
+.el-button span {
+    font-size: 14px;
+}
+
+.el-input__inner {
+    
+    font-size: 14px !important;
+}
+
+.landingPage .el-button {
+    display: flex;
+    margin: auto;
+}
