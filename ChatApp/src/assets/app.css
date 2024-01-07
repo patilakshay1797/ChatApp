@@ -6,7 +6,7 @@
 
 body {
     height: 100vh;
-    background-color: #a8abb2;
+    /* background-color: #a8abb2; */
     color: whitesmoke;
     font-size: 18px;
 }
@@ -37,4 +37,12 @@ body {
 .landingPage .el-button {
     display: flex;
     margin: auto;
+}
+
+.flexStart {
+    align-items: flex-start;
+}
+
+.flexEnd {
+    align-items: flex-end;
 }

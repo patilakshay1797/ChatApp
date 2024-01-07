@@ -1,7 +1,7 @@
 <template>
   <div class="appWrapper">
     <div v-if="isLandingPage" class="companyLogo">
-      Image or Company logo
+      <img :src="url.default" style="width: 100%"></img>
     </div>
     <div class="chatAppWrapper">
       <div class="chatApp">
@@ -22,6 +22,7 @@
 <script setup>
 import ChatBox from './components/ChatBox.vue';
 import {ref} from 'vue';
+import * as url from  "./assets/logo/ChatApp_logo.png";
 
 const isLandingPage = ref(true);
 const userName = ref("");
